@@ -17,9 +17,9 @@ pantry() {
 }
 
 number_doubler() {
-    local result=$(($1 * 2))
+    local result=$(($1 * 2)) #local is to specify that this variable is only for the function number_doubler
     return $result
-}
+} 
 number_doubler 3
 echo "$?"
 
